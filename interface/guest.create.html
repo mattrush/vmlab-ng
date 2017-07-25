@@ -1,0 +1,75 @@
+<h3>
+create <span id="ref_name"></span>
+</h3>
+<div class="align">
+<form id="create_form">
+<label>name:</label>
+<input id="create_guest_name" name="name" type="text" />
+<br />
+<label>lab:</label>
+<select id="create_guest_lab" name="lab"></select>
+<br />
+<label>ram:</label>
+<span id="create_guest__ram__display"></span> MB 
+<a id="create_guest__ram__increase" href="javascript:void(0)" class="controls">&plus;</a>
+<span id="create_guest__ram__increase_limit" class="controls limit">&plus;</span>
+<a id="create_guest__ram__decrease" href="javascript:void(0)" class="controls">&minus;</a>
+<span id="create_guest__ram__decrease_limit" class="controls limit">&minus;</span>
+<input id="create_guest__ram__input" name="ram" value="" type="hidden" />
+<br />
+<label>os:</label>
+&nbsp;template <input id="create_guest_os_template" name="template_flag" value="true" type="radio" checked="checked" />
+&nbsp;iso <input id="create_guest_os_iso" name="template_flag" value="false" type="radio" />
+<br />
+<div id="create_guest_template">
+<label>template:</label>
+<select id="create_guest_template_select" name="template"></select>
+<br />
+<label>cow:</label>
+&nbsp;enable <input id="create_guest_cow_enable" name="cow_flag" value="true" type="radio" checked="checked" />
+&nbsp;disable <input id="create_guest_cow_disable" name="cow_flag" value="false" type="radio" />
+<br />
+</div>
+<div id="create_guest_iso">
+<label>iso:</label>
+<select id="create_guest_iso_select" name="iso"></select>
+<br />
+<div id="create_guest_os_disk_no">
+<label>os disk:</label>
+&nbsp;enable <input id="create_guest_os_disk_enable" name="os_disk_flag_toggle" value="true" type="radio" />
+<input id="create_guest_os_disk_input" name="os_disk_flag" value="false" type="hidden" />
+</div>
+<div id="create_guest_os_disk_yes">
+<label>os disk:</label>
+<span id="create_guest__os_capacity__display"></span> GB 
+<a id="create_guest__os_capacity__increase" href="javascript:void(0)" class="controls">&plus;</a>
+<span id="create_guest__os_capacity__increase_limit" class="controls limit">&plus;</span>
+<a id="create_guest__os_capacity__decrease" href="javascript:void(0)" class="controls">&minus;</a>
+<span id="create_guest__os_capacity__decrease_limit" class="controls limit">&minus;</span>
+<a id="create_guest_os_disk_close" href="javascript:void(0)" class="controls">&times;</a>
+<input id="create_guest__os_capacity__input" name="os_capacity" value="" type="hidden" />
+<br />
+</div>
+</div>
+<div id="create_guest_data_disk_no">
+<label>data disk:</label>
+&nbsp;enable <input id="create_guest_data_disk_enable" name="data_disk_flag_toggle" value="true" type="radio" />
+<input id="create_guest_data_disk_input" name="data_disk_flag" value="false" type="hidden" />
+</div>
+<div id="create_guest_data_disk_yes">
+<label>data disk:</label>
+<span id="create_guest__data_capacity__display"></span> GB 
+<a id="create_guest__data_capacity__increase" href="javascript:void(0)" class="controls">&plus;</a>
+<span id="create_guest__data_capacity__increase_limit" class="controls limit">&plus;</span>
+<a id="create_guest__data_capacity__decrease" href="javascript:void(0)" class="controls">&minus;</a>
+<span id="create_guest__data_capacity__decrease_limit" class="controls limit">&minus;</span>
+<!--&nbsp;-->
+<a id="create_guest_data_disk_close" href="javascript:void(0)" class="controls">&times;</a>
+<input id="create_guest__data_capacity__input" name="data_capacity" value="" type="hidden" />
+<br />
+</div>
+<br />
+<button ref="" class="submit_create">create</button>
+<button class="close_modal">cancel</button>
+<div id="test"></div>
+</div>

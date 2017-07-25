@@ -1,0 +1,69 @@
+/* interface */
+*, html, body {
+  margin:			0;
+  padding:			0;
+}
+body {
+  background-color:		grey;
+  font-family:			serif;
+}
+#wrap {
+  margin-left:			auto;
+  margin-right:			auto;
+  width:			888px;
+  padding:			40px;
+  background-color:		white;
+  margin-top:			40px;
+  margin-bottom:		40px;
+}
+h1 {
+  color:			black;
+}
+h3 {
+  color:			green;
+}
+h1, h3, p {
+  margin:			20px;
+}
+li, ol, ul {
+  margin-left:			20px;
+  margin-right:			20px;
+}
+/* modal */
+#mask {
+  position:			absolute;
+  top:				0px;
+  left:				0px;
+  height:			100%;
+  width:			100%;
+  display:			none;
+  background-color:		grey;
+}
+#modal {
+  position:			absolute;
+  display:			none;
+  padding:			40px;
+  background:			white;
+  border:			1px solid whitesmoke;
+}
+/* button */
+button {
+/*  padding:			5px;
+  margin-right:			5px; */
+}
+/* form */
+.align {
+  margin:			20px;
+}
+/* controls */
+.controls {
+  text-decoration:		none;
+}
+.limit {
+  color:			lightgrey;
+  display:			none;
+}
+/* data */
+.noshow {
+  display:			none;
+}
